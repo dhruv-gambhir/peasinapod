@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import Sidebar from "../components/Sidebar";
+import Sidebar from "@/components/Sidebar";
 
 export const metadata = {
   title: "Peas in a Pod",
@@ -9,11 +9,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="grid grid-cols-[1fr_5fr] h-screen">
+      <body className="p-[0px] m-[0px] bg-[#98FB98]">
         <Sidebar />
-        <div className="bg-[#98FB98]">
+        <main className="ml-[16.666666%] w-5/6 min-h-screen overflow-y-auto">
           {children}
-        </div>
+        </main>
       </body>
     </html>
   );
