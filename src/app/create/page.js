@@ -1,7 +1,10 @@
+"use client";
+
 export default function Create() {
-    return (
-        <main>
+
+	return (
+		<main>
             Create
-        </main>
+		</main>
     );
 }
